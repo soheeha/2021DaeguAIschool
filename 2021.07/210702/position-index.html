@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/position-style.css">
+</head>
+<body>
+
+<!-- 부모 자식 간 position 속성값 변경 차이-->
+
+<!-- 
+체크 사항
+	1. margin-top 사용시 부모 자식 간 마진 병합 현상이 일어나는지
+	2. top, right, bottom, left 속성을 사용할 수 있는지
+	3. 부모의 높이 값이 없을 때 자식의 높이 값이 부모에게 영향을 주는지
+-->
+
+
+
+<!-- 자식이 static일 경우
+1. 부모가 static, relative면 마진병합 발생 2. top불가능 3. 자식이 부모에게 높이 영향 준다-->
+
+<!--
+<div class="static-parent bigsizebox">
+	<div class="static-child smallsizebox"></div>
+</div>
+-->
+ <!-- 1.o 2.x 3.o -->
+
+<!--
+<div class="fixed-parent bigsizebox"> 
+	<div class="static-child smallsizebox"></div>
+</div>
+-->
+<!-- 1.x 2.x 3.o -->
+
+<!--
+<div class="relative-parent bigsizebox">
+	<div class="static-child smallsizebox"></div>
+</div>-->
+<!-- 1.o 2.x 3.o -->
+
+<!--
+<div class="absolute-parent bigsizebox">
+	<div class="static-child smallsizebox"></div>
+</div> -->
+<!-- 1.x 2.x 3.o-->
+
+
+
+
+<!-- 자식이 fixed일 경우
+1. 마진병합 x 2. top 가능 3. 자식이 부모에게 높이 영향 주지 못함-->
+<!--
+<div class="static-parent bigsizebox">
+	<div class="fixed-child smallsizebox"></div>
+</div>-->
+<!-- 1.x 2.o 3.x -->
+
+<!--
+<div class="fixed-parent bigsizebox">
+	<div class="fixed-child smallsizebox"></div>
+</div>-->
+<!-- 1.x 2.o 3.x-->
+
+<!--
+<div class="relative-parent bigsizebox">
+	<div class="fixed-child smallsizebox"></div>
+</div>-->
+<!-- 1.x 2.o 3.x-->
+<!--
+<div class="absolute-parent bigsizebox">
+	<div class="fixed-child smallsizebox"></div>
+</div>-->
+<!-- 1.x 2.o 3.x-->
+
+
+
+<!-- 자식이 relative일 경우
+1. 마진병합 부모가 static relaive면 발생 2.top가능 3. 자식이 부모 높이 영향 줌-->
+<!--
+<div class="static-parent bigsizebox">
+	<div class="relative-child smallsizebox"></div>
+</div>-->
+<!-- 1.o 2.o 3.o -->
+
+<!--
+<div class="fixed-parent bigsizebox"> 
+	<div class="relative-child smallsizebox"></div>
+</div>-->
+<!-- 1.x 2.o 3.o -->
+
+<!--
+<div class="relative-parent bigsizebox">
+	 <div class="relative-child smallsizebox"></div>
+</div>-->
+<!-- 1.o 2.o 3.o -->
+<!--
+<div class="absolute-parent bigsizebox">
+	<div class="relative-child smallsizebox"></div>
+</div>-->
+<!-- 1.x 2.o 3.o -->
+
+
+
+<!-- 자식이 absolute일 경우 
+모든 부모 형태에서 1. 마진 병합 x 2. top사용가능 3. 자식 높이가 부모에게 영향 줌-->
+<!--
+<div class="static-parent bigsizebox">
+	<div class="absolute-child smallsizebox"></div>
+</div>-->
+<!-- 1.x 2.o 3.o  -->
+
+<!--
+<div class="fixed-parent bigsizebox"> 
+	<div class="absolute-child smallsizebox"></div>
+</div>-->
+<!-- 1.x 2.o 3.o  -->
+
+<!--
+<div class="relative-parent bigsizebox">
+	<div class="absolute-child smallsizebox"></div>
+</div>-->
+<!-- 1.x 2.o 3.o  -->
+
+<div class="absolute-parent bigsizebox">
+	<div class="absolute-child smallsizebox"></div>
+</div>
+<!-- 1.x 2.o 3.o  -->
+
+
+
+
+
+
+
+</body>
+</html>
