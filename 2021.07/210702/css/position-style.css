@@ -1,0 +1,61 @@
+/* 부모 자식 간 position 속성값 변경 차이*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+
+.bigsizebox {	
+	width: 500px;
+	/*height: 1200px;*/
+	background-color: darkseagreen;
+}
+
+.smallsizebox {
+	width: 200px;
+	height: 100px;
+	background-color: darkslategray;
+
+	/*margin-top: 100px;*/
+ 	/*top: 100px;*/
+}
+
+
+.static-parent {
+	position: static;
+}
+
+.fixed-parent {
+	position: fixed;
+}
+
+.relative-parent {
+	position: relative;
+}
+
+.absolute-parent {
+	position: absolute;
+}
+
+.static-child {
+	position: static;
+}
+
+.fixed-child {
+	position: fixed;
+}
+
+.relative-child {
+	position: relative;
+}
+
+.absolute-child {
+	position: absolute;
+}
+
+\
+
+
+
+
