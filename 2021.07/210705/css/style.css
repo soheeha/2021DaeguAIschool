@@ -1,0 +1,428 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.box-model {
+	box-sizing: border-box;
+
+
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	border: solid 10px red;
+
+	/*margin: 100px 0 0 100px;*/
+	padding: 100px 0 0 100px;
+
+
+	/*
+	margin-left: 100px;
+	padding-left: 100px;
+	margin-right: ;
+	margin-bottom: ;
+
+	padding-left: 100px;
+	padding-top: 100px;
+	padding-bottom: ;
+	margin-top: ;
+	*/
+
+}
+
+
+.margin-one {
+	width: 100%;
+	height: 100px;
+	background-color: yellow;
+
+	margin-bottom: 100px;
+}
+
+
+.margin-two {
+	width: 100%;
+	height: 100px;
+	background-color: blue;
+
+	margin-top: 50px;
+}
+
+.margin-parent {
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+}
+
+.margin-child {
+	position: absolute;
+
+	width: 150px;
+	height: 150px;
+	background-color: blue;
+
+	margin-top: 100px;
+}
+
+
+/*
+h1 {
+	display: inline-block;
+
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+
+	margin-top: 100px;
+}
+
+span {
+	display: block;
+
+	width: 100px;
+	height: 100px;
+	background-color: pink;
+
+	margin-top: 100px;
+}
+*/
+
+
+
+
+.inline-block {
+	display: inline-block;
+
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+}
+
+.inline, .inline-block, img {
+	vertical-align: middle;
+}
+
+
+.static-parent {
+	width: 300px;
+	/*height: 300px;*/
+	background-color: yellow;
+}
+
+
+.static-child {
+	position: static;
+
+	width: 150px;
+	height: 150px;
+	background-color: blue;
+
+	/*margin-top: 100px;*/
+	top: 100px;
+
+}
+
+.box1 {
+	width: 300px;
+	height: 200px;
+	background-color: gray;
+}
+
+.fixed-parent {
+	width: 300px;
+	/*height: 300px;*/
+	background-color: yellow;
+
+
+}
+
+.fixed-child {
+	position: fixed;
+
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+
+	/*margin-top: 100px;*/
+	/*top: 100px;*/
+}
+
+.box2 {
+	width: 300px;
+	height: 2000px;
+	background-color: green;
+}
+
+
+
+
+.box1 {
+	width: 300px;
+	height: 200px;
+	background-color: gray;
+}
+
+.relative-parent {
+
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+
+}
+
+.relative-child {
+	position: relative;
+
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+
+	/*margin-top: 100px;*/
+	left: 50px;
+}
+
+
+
+
+
+.box1 {
+	width: 300px;
+	height: 200px;
+	background-color: gray;
+}
+
+.absolute-parent {
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+
+
+}
+
+.absolute-child {
+	position: absolute;
+
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+
+	/*margin-top: 100px;*/
+	top: 70px;
+}
+
+
+
+
+
+/*21.07.05*/
+
+
+
+
+.z-one {
+	
+
+	width: 200px;
+	height: 400px;
+	background-color: yellow;
+	/*z-index: 10;*/
+}
+
+.z-two {
+	position: absolute;
+
+	width: 200px;
+	height: 300px;
+	background-color: blue;
+
+	/*z-index: 20;*/
+}
+
+
+
+
+.left-1 {
+	float: left;
+
+	width: 100px;
+	height: 150px;
+	background-color: blue;
+}
+
+.right-1 {
+	float: right;
+
+	width: 100px;
+	height: 150px;
+	background-color: green;
+}
+
+
+
+/*
+header {
+	width: 100%;
+	height: 100px;
+	background-color: yellow;
+}
+
+.left {
+	float: left;
+
+	width: 100px;
+	height: 200px;
+	background-color: pink;
+}
+
+
+.center {
+	float: left;
+
+	width: 300px;
+	height: 200px;
+	background-color: blue;
+}
+
+.right {
+	position: static;
+	float: right;
+
+	width: 100px;
+	height: 200px;
+	background-color: green;
+}
+
+
+footer {
+	clear: both;
+
+	width: 100%;
+	height: 100px;
+	background-color: black;
+}
+
+
+section {
+	width: 1100px;
+	height: 200px;
+	background-color: orange;
+}
+*/
+
+
+/*
+.left-2 {
+	float: left;
+
+	width: 100px;
+	height: 150px;
+	background-color: yellow;
+}
+
+.right-2 {
+	float: right;
+
+	width: 100px;
+	height: 150px;
+	background-color: blue;
+}
+
+footer {
+
+	width: 100%;
+	height: 100px;
+	background-color: black;
+
+}
+
+.clearfix {
+	clear: both;
+}
+
+section {
+	overflow: hidden;
+	width: 800px;
+	background-color: orange;
+}
+
+
+
+.over-box {
+	overflow: hidden;
+
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+}
+*/
+
+
+
+
+.container {
+	display: flex;
+	/*flex-direction: row;*/
+	/*flex-wrap: wrap;*/
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: baseline;
+
+
+	width: 1000px;
+	height: 500px;
+	border: solid 10px red;
+}
+
+.item {
+	width: 200px;
+
+}
+
+.one {
+	height: 100px;
+	background-color: yellow;
+}
+
+.two {
+	height: 200px;
+	background-color: blue;
+}
+
+.three {
+	/*width: 900px;*/
+	height: 300px;
+	background-color: orange;
+}
+
+
+
+
+.center-1 {
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+
+	margin: 0 auto;
+}
+
+
+.center-2 {
+	position: relative;
+
+	width: 400px;
+	height: 300px;
+	background-color: blue;
+
+	left: 50%;
+	margin-left: -200px;
+}
+
+
+
+
+
+
+
+
