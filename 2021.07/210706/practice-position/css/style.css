@@ -1,0 +1,56 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+/*형제 지간 레이어 겹침 현상이 일어나는지*/
+
+.p-one {
+	width: 200px;
+	height: 200px;
+	background-color: dimgray;
+}
+
+
+.p-two {
+	width: 200px;
+	height: 200px;
+	background-color: darksalmon;
+}
+
+
+
+
+.fst {
+	position: absolute;
+}
+
+.snd {
+	position: absolute;
+}
+
+/* 
+둘째의 포지션 변경 순서는 static, fixed, relative, absolute
+겹칠 시 위에 올라오는 레이어를 괄호 안에 표기
+
+첫째가 static일 경우 레이어 겹침 발생 x x x x
+첫째가 fixed일 경우 레이어 겹침 발생 o(첫째) o(둘째) o(둘째) o(둘째)
+첫째가 relative일 경우 레이어 겹침 발생 x x x x
+첫째가 absolute일 경우 레이어 겹침 발생 o(첫째) o(둘째) o(둘째) o(둘째)
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
