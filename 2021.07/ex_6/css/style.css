@@ -1,0 +1,143 @@
+.transform {
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+
+	/*transform: rotate(-10deg);*/
+	/*transform: scale(0.5, 0.5);*/
+	/*transform: skew(10deg, 20deg);*/
+	/*transform: translate(100px, 100px);*/
+
+
+	/*margin-left: 300px;*/
+	/*margin-top: 500px;*/
+
+	/*-webkit-transform: rotate(10deg);*/
+	/*-moz-transform: rotate(10deg);*/
+	/*-ms-transform: rotate(10deg);*/
+	/*-o-transform: rotate(10deg);*/
+	transform: rotate(10deg);
+}
+
+
+.transition {
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+
+	/*
+	transition-property: width;
+	transition-duration: 2s;
+	transition-timing-function: linear;
+	transition-delay: 1s;
+	*/
+
+	transition: width 2s linear, height 2s linear;
+
+}
+
+.transition:hover {
+	width: 600px;
+	height: 600px;
+}
+
+
+.animation {
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+
+	animation-name: changeWidth;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-delay: 1s;
+
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes changeWidth {
+	0% {
+		width: 300px;
+		height: 300px;
+		background-color: yellow;
+	}
+
+	50% {
+		background-color: blue;
+	}
+
+
+	100% {
+		width: 600px;
+		height: 600px;
+		background-color: #000000;
+		border: solid 10px blue;
+	}
+}
+
+
+
+
+.spin-lion {
+	width: 150px;
+	height: 150px;
+	background-color: blue;
+
+	/*
+	animation-name: spinLion;
+	animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	*/
+
+	-webkit-animation: spinLion 1.5s linear infinite alternate;
+	animation: spinLion 1.5s linear infinite alternate;
+}
+
+
+@-webkit-keyframes spinLion {
+	from {
+		transform: rotate(-10deg);
+
+	}
+
+	to {
+		transform: rotate(20deg);
+	}
+}
+
+@keyframes spinLion {
+	from {
+		transform: rotate(-10deg);
+
+	}
+
+	to {
+		transform: rotate(20deg);
+	}
+}
+
+/*
+.stylie {
+	width: 20px;
+	height: 20px;
+	background-color: dimgray;
+
+  	animation-name: stylie-transform-keyframes;
+  	animation-duration: 3000ms;
+  	animation-delay: 0ms;
+  	animation-fill-mode: forwards;
+  	animation-timing-function: linear;
+  	animation-iteration-count: infinite;
+  	transform-origin: 0 0;
+}
+@keyframes stylie-transform-keyframes {
+  0% {transform:translate(0px, 0px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  66.67% {transform:translate(274px, 105.5px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+  100% {transform:translate(728px, -31.5px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+}html::after { content: url(https://ga-beacon.appspot.com/UA-42910121-1/stylie?pixel); position: absolute; left: -999em; }
+*/
+
+
