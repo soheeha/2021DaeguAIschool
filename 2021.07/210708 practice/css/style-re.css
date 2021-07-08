@@ -1,0 +1,70 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+	margin: 30px;	
+	padding: 0;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+
+
+.recipe-lists {
+	width: 750px;
+	height: 510px;
+	margin: 10;
+
+}
+
+.recipe-lists li {
+	width: 750px;
+	height: 114px;
+}
+
+.recipe-lists .recipe-image,
+.recipe-lists .recipe-best-post {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/*인라인 블록과 버티컬 얼라인 작동 안한다. 어디부터 잘못된 건지 모르겠다..*/
+
+.recipe-lists li .theme-category {
+	color: #ebaa00;
+	font-weight: 700;
+	font-size: 12px;
+}
+
+.recipe-lists li h3 {
+	color: #202020;
+	font-size: 13px;
+}
+
+.recipe-lists li p {
+	color: #404040;
+	font-size: 13px;    
+}
+
+.recipe-lists .recipe-image {
+	overflow: hidden;
+}
+
+.recipe-lists .recipe-image img {
+	border: solid 1px rgba(0, 0, 0, 0.3);
+	transition: transform 50ms linear;
+}
+
+.recipe-lists .recipe-image:hover img {
+	transform: scale(1.1);
+}
+
+.recipe-lists .recipe-best-post:hover h3{
+	text-decoration: underline;
+}
