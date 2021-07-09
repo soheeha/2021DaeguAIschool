@@ -1,0 +1,91 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/*
+	320px ~ 768px 미만      : 스마트폰
+	768px ~ 1024px 미만     : 태블릿
+	1024px 이상 ~           : PC
+*/
+
+.pc {
+	color: red;
+	font-size: 50px;
+	background-color: pink;
+}
+
+.mobile {
+	display: none;
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.pc {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+}
+
+
+/*
+@media (min-width: 320px) and (max-width: 767px) {
+	.pc {
+		color: blue;
+		font-size: 20px;
+		background-color: yellow;
+	}
+	}
+
+*/
+
+/*@media (min-width: 100px) and (max-width: 599px) {
+	.pc {
+		color: green;
+		font-size: 10px;
+		background-color: gray;
+	}
+}*/
+
+
+
+
+
+
+/*모바일-태블릿-pc 순으로 만드는 미디어 쿼리 작성 기법*/
+
+
+
+h1 {
+	font-size: 20px;
+	background-color: yellow;
+}
+
+
+/*아래에 새 min 쿼리를 추가함으로써 이 쿼리는 자동으로 max-width 1024px미만의 범위를 갖게 된다.*/
+@media (min-width:  768px) {
+	h1 {
+		font-size: 40px;
+		background-color: pink;
+	}
+}
+
+@media (min-width: 1024px) {
+	h1 {
+		font-size: 80px;
+		background-color: gray;
+	}
+}
+
+
+
