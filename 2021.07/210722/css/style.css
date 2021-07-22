@@ -611,7 +611,6 @@ main #blog_wrap .blog_media_wrap ul .blog_media_info span {
 	position: relative;
 	width: 308px;
 	height: 496px;
-	/*background-color: #ffffff;*/
 
 	margin-bottom: 20px;
 }
@@ -772,13 +771,14 @@ main #blog_wrap .blog_media_wrap ul .blog_media_info span {
 
 #shop-main .list-item .list-half .list-half-header.list-half-bg {
 	background-color: green;
+	border-bottom: solid 1px #ffffff;
 	padding-top: 0;
 }
 
 #shop-main .list-item .list-half .list-half-header.list-half-bg .shop-title-border {
 	position: relative;
-	border-bottom: solid 1px #ffffff;
 	display: inline-block;
+	
 	border: solid 1px #ffffff;
 	padding: 2px 4px;
 
@@ -856,7 +856,7 @@ main #blog_wrap .blog_media_wrap ul .blog_media_info span {
 	display: block;
 	width: 42px;
 	height: 42px;
-	background-color: orange;
+	background-color: red;
 	border-radius: 50%;
 
 	font-size: 14px;
@@ -883,6 +883,7 @@ main #blog_wrap .blog_media_wrap ul .blog_media_info span {
 	font-weight: 700;
 	font-style: normal;
 }
+
 
 #shop-main .list-item .list-row-3 {
 	background-color: #ffffff;
@@ -970,7 +971,7 @@ main #blog_wrap .blog_media_wrap ul .blog_media_info span {
 	width: 1px;
 	height: 11px;
 	margin: 0 8px;
-	background-color: #e4e8eb;
+	background-color: #d7d7d7;
 	vertical-align: -1px;
 }
 
