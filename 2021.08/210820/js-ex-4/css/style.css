@@ -1,0 +1,67 @@
+.box {
+	position: relative;
+
+	width: 500px;
+	padding: 50px;
+	background: #fff;
+	border-radius: 5px;
+	border: solid 1px black;
+
+	margin: 100px auto;
+}
+
+.btn {
+	position: absolute;
+	display: inline-block;
+	background: #ccc;
+
+	padding: 10px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.prevBtn {
+	top: 50%;
+	left: 0;
+	transform: translate(-120%, -50%);
+
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.nextBtn {
+	top: 50%;
+	right: 0;
+	transform: translate(120%, -50%);
+
+	border-bottom-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
