@@ -23,11 +23,3 @@ $profile.on({
 		$(this).next().fadeOut()
 	}
 })
-
-
-
-
-
-
-
-
