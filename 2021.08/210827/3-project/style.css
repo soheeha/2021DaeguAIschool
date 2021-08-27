@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+.profile-wrap {
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.profile {
+	width: 50px;
+	height: 50px;
+	background: yellow;
+}
+
+.profile-popup {
+	position: absolute;
+	width: 100px;
+	top: 50px;
+	background: pink;
+
+	text-align: center;
+
+	z-index: 100;
+	display: none;
+}
+
+.profile-popup h2 {
+	font-size: 14px;
+	color: #666;
+}
+
+.profile-popup p {
+	font-size: 12px;
+	color: #888;
+}
+
+
+
+
+
+
+
