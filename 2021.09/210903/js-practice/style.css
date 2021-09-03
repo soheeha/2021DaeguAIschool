@@ -1,0 +1,84 @@
+/*
+#color-bg {
+	width: 300px;
+	height: 300px;
+	background: black;
+}
+
+#btn {
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+
+	background: rgba(34, 177, 76, 0.8);
+	color: #fff;
+
+	font-size: 20px;
+}
+
+#btn:active {
+	background: rgba(34, 177, 76, 0.6);
+} 
+*/
+
+
+
+#container {
+	position: relative;
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	border: solid 1px #cccccc;
+	border-radius: 50%;
+}
+
+h1 {
+	position: absolute;
+	width: 100%;
+	left: 253px;
+	top: 210px;
+    transform: translate(-40%, -120%);
+    margin: 0 auto;
+}
+
+
+#btn {
+	position: absolute;
+	width: 110px;
+	height: 45px;
+	background: #fff url(flower.png);
+	background-size: 30px;
+	background-repeat: no-repeat;
+	background-position: 5px;
+	padding: 0 0 0 32px;
+	border: solid 1px #cccccc;
+	border-radius: 5px;
+
+	left: 190px;
+	top: 65%;
+    transform: translate(-40%, -120%);
+
+
+}
+
+#btn:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#btn:active {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
